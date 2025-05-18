@@ -15,9 +15,19 @@
     <title>Bikewatching</title>
   </head>
   <body>
-    <h1>🚴🏼‍♀️ Bikewatching</h1>
+    <header style="display: flex; gap: 1em; align-items: baseline">
+      <h1>🚴🏼‍♀️ Bike Station Traffic</h1>
+      <label style="margin-left: auto">
+        Filter by time:
+        <input type="range" id="time-slider" min="-1" max="1440" value="-1" />
+        <time id="selected-time" style="display: block"></time>
+        <em id="any-time" style="display: block; color: gray">(any time)</em>
+      </label>
+    </header>
     <div id="map">
       <svg></svg>
     </div>
+
+    <div id="tooltip" style="display: none; position: absolute"></div>
   </body>
 </html>

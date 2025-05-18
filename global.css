@@ -10,3 +10,19 @@ body {
   margin: auto;
   padding: 1em;
 }
+
+.tooltip {
+  position: absolute;
+  background: white;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none;
+  display: none;
+  font-size: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#time-slider {
+  width: 200px;
+}
